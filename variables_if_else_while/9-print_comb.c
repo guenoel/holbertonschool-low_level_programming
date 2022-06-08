@@ -8,7 +8,7 @@
 int main(void)
 {
 	int c;
-	char n;
+	int n;
 
 	c = '\n';
 	for (n = 48; n < 58; n++)
