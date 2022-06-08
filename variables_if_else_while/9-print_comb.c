@@ -8,23 +8,18 @@
 int main(void)
 {
 	int c;
-	int d;
-	int e;
 	char n;
 
 	c = '\n';
-	d = ',';
-	e = ' ';
 	for (n = 48; n < 58; n++)
+	{
+	putchar(n);
 	if (n != 57)
 	{
-	putchar(n);
-	putchar(d);
-	putchar(e);
+	putchar(',');
+	putchar(' ');
 	}
-	else
-	{
-	putchar(n);
 	}
+	putchar(c);
 	return (0);
 }
