@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - recréer la fonction islower
+ * _islower - recréer la fonction islower
  *
  * exercice sur les fonctions et les boucles
  * recréer la fonction islower (est-ce une minuscule)
