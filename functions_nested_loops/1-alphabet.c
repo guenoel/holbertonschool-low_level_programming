@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * main - fonction principale
+ * print_alphabet - fonction affichage d alphabet
  *
  * exercice sur les fonctions et les boucles
+ * affiche l'alphabet
  * Return: retourne un zero
  */
-int print_alphabet()
+int print_alphabet(void)
 {
 	int i;
 
