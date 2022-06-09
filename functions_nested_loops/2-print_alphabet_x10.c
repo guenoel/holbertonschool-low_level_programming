@@ -18,11 +18,17 @@ int print_alphabet(void)
 	return (0);
 }
 
+/**
+ * print_alphabet_x10 - affiche 10 fois
+ *
+ * affiche 10 fois
+ * Return : rien du tout
+ */
 void print_alphabet_x10(void)
 {
 	int i;
 
-	for (i =0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		print_alphabet();
 	}
