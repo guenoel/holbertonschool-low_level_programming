@@ -6,16 +6,15 @@
  * recréer la fonction islower (est-ce une minuscule)
  * Return: retourne un 0 ou un 1 si min ou maj
  */
+
 int _islower(int c)
 {
-	int c;
-
-	if ((c >= 97) && (c <= 122))
+	if (c >= 97) && (c <= 122)
 	{
-	_putchar('1');
-	else
-	_putchar('0');
+	return (1);
 	}
-	_putchar(10);
+	else
+	{
 	return (0);
+	}
 }

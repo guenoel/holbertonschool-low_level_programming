@@ -4,4 +4,4 @@ int _putchar(char i);
  * int print_alphabet(void); (exercice 1)
  * void print_alphabet_x10(void); (exercice 2)
  */
-int _islower(int c)
+int _islower(int c);
