@@ -8,5 +8,6 @@ int _putchar(char i);
  * int print_sign(int n);
  * int _abs(int n);
  * int print_last_digit(int);
+ * void jack_bauer(void);
  */
-void jack_bauer(void);
+int add(int, int);
