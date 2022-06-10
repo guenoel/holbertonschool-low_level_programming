@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - recréer la fonction islower
+ * _abs - recréer la fonction islower
  * @n: variable du caractere a tester
  *
  * exercice sur les fonctions et les boucles
@@ -10,5 +10,5 @@
 
 int _abs(int n)
 {
-		  return n * ((n>0) - (n<0));
+	return (n * ((n > 0) - (n < 0)));
 }
