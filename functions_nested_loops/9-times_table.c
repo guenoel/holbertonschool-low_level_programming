@@ -20,7 +20,9 @@ for (y = 0; y <= 9; y++)
 	{
 		d = ((x * y) / 10);
 		u = ((x * y) % 10);
-		if (d == 0)
+		if (x == 0)
+			;
+		else if (d == 0)
 			_putchar(' ');
 		else
 		{
