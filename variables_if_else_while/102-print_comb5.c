@@ -22,7 +22,7 @@ for (c = 0; c <= 9; c++)
 		{
 			if (m == d && c == u )
 				;
-			else if (m > d || c > u)
+			else if (((m*10)+c) > ((d*10)+u))
 				;
 			else
 			{
