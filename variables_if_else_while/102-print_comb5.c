@@ -31,7 +31,7 @@ for (c = 0; c <= 9; c++)
 			putchar(' ');
 			putchar(d + '0');
 			putchar(u + '0');
-			if (!(c == 7 && d == 8 && u == 9))
+			if (!(m == 9 && c == 8 && d == 9 && u == 9))
 				{
 				putchar(',');
 				putchar(' ');
