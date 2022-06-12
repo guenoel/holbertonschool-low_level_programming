@@ -20,9 +20,9 @@ for (c = 0; c <= 9; c++)
 	{
 		for (u = 0; u <= 9; u++)
 		{
-			if (m == d && c == u )
+			if (m == d && c == u)
 				;
-			else if (((m*10)+c) > ((d*10)+u))
+			else if (((m * 10) + c) > ((d * 10) + u))
 				;
 			else
 			{
