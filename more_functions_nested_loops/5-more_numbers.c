@@ -11,22 +11,26 @@ void more_numbers(void)
 {
 	int i;
 	int d;
+	int u;
 
-	for (d = 0; d <= 1; d++)
+	for (i = 0; i <= 9 ; i++)
 	{
-		for (i = 0; i <= 9; i++)
+		for (d = 0; d <= 1; d++)
 		{
-			if (d == 1 && i >= 5)
-				;
-			else
+			for (u = 0; u <= 9; u++)
 			{
-				if (d > 0)
+				if (d == 1 && u >= 5)
+					;
+				else
 				{
-					_putchar(d + '0');
+					if (d > 0)
+					{
+						_putchar(d + '0');
+					}
+					_putchar(u + '0');
 				}
-				_putchar(i + '0');
 			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
