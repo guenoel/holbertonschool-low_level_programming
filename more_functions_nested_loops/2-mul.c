@@ -9,7 +9,8 @@
  * Return: retourne un 0 ou un 1 si min ou maj
  */
 
-int mul (int a, int b)
+int mul(int a, int b)
+
 {
 	int res;
 	res = a * b;
