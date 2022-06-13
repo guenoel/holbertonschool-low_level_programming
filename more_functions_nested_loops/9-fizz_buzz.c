@@ -26,7 +26,12 @@ int main(void)
 								% 5 == 0))
 						printf("FizzBuzz ");
 					else if (((c * 100) + (d * 10) + u) % 5 == 0)
+					{
+						if ((c == 1) && (d == 0) && (u == 0))
+						printf("Buzz");
+						else
 						printf("Buzz ");
+					}
 					else if (((c * 100) + (d * 10) + u) % 3 == 0)
 						printf("Fizz ");
 					else
