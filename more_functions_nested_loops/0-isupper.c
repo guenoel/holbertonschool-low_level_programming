@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - recréer la fonction islower
+ * _isupper - recréer la fonction islower
  * @c: variable du caractere a tester
  *
  * exercice sur les fonctions et les boucles
