@@ -9,11 +9,11 @@
 int _strlen(char *s)
 {
 	int l;
-	int a;
-	int b;
+	l = 0;
 
-	a = sizeof(s);
-	b = sizeof(char);
-	l =  (a / b);
+	while (s[l] != '\0')
+	{
+		l++;
+	}
 	return (l);
 }
