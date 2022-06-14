@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * swap_int - inverser la valeur dans une variable
- * @n: pointer de int
+ * @a: pointer de int
+ * @b: pointer de int
  */
 
 void swap_int(int *a, int *b)
