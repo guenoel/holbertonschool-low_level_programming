@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * puts_half - print
- * @str: chaine de caractere - pointeur vers un array
+ * print_array - print
+ * @n: le nombre d elements dans le array
+ * @a: le array
  *
  * Return: rien
  */
