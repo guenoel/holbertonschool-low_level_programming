@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * puts2 - print
+ * puts_half - print
  * @str: chaine de caractere - pointeur vers un array
  *
  * Return: rien
