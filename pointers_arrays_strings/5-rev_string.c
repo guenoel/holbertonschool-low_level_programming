@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_string - print
+ * rev_string - print
  * @s: pointer de char
  *
  * Return: numbers of elements in array
