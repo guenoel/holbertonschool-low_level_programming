@@ -28,13 +28,13 @@ int _count(char *str)
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, d;
-	
+
 	d = _count(dest);
 	for (i = 0; src[i] != '\0' && i < n && i < d; i++)
 	{
 		dest[i] = src[i];
 	}
-	if (i < n)
+	if (i < n || i = 0)
 	dest[i] = '\0';
 	return (dest);
 }
