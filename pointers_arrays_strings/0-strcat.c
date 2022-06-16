@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _strcat - concatener un string a la suite d un string
+ * _count - concatener un string a la suite d un string
  * @str: un string
- * @dest: string destination
- * @src: string source
  *
  * Return: le string concaténé
  */
@@ -12,9 +10,19 @@
 int _count(char *str)
 {
 	int c;
-	for (c = 0; str[c] != '\0'; c++);
+
+	for (c = 0; str[c] != '\0'; c++)
+		;
 	return (c);
 }
+
+/**
+ * _strcat - concatener un string a la suite d un string
+ * @dest: string destination
+ * @src: string source
+ *
+ * Return: le string concaténé
+ */
 
 char *_strcat(char *dest, char *src)
 {
@@ -24,8 +32,8 @@ char *_strcat(char *dest, char *src)
 	b = _count(dest);
 	for (i = b, j = 0; src[j] != '\0'; i++, j++)
 	{
-		dest[i] = src[j];/* variable dest interne au for seul?*/
+		dest[i] = src[j];
 	}
-		dest[a + b + 1] = '\0';/*du coup dest ici n'a pas changé?*/
+	dest[a + b + 1] = '\0';
 	return (dest);
 }
