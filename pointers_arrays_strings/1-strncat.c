@@ -20,6 +20,7 @@ int _count(char *str)
  * _strncat - concatener un string a la suite d un string
  * @dest: string destination
  * @src: string source
+ * @n: max elements of source to copy to
  *
  * Return: le string concaténé
  */
