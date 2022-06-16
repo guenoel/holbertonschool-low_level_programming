@@ -27,9 +27,10 @@ int _count(char *str)
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
-
-	for (i = 0; src[i] != '\0' && i < n; i++)
+	int i, d;
+	
+	d = _count(dest);
+	for (i = 0; src[i] != '\0' && i < n && i < d; i++)
 	{
 		dest[i] = src[i];
 	}
