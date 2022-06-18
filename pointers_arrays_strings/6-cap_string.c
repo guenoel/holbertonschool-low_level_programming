@@ -9,12 +9,16 @@
  */
 char *cap_string(char *ptr)
 {
-	int i;
+	int i, j;
+	int a[] = {'.', ' ', '\n', '\t', ',', ';', '!', '?', '"', '(', ')', '{', '}'};
 
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
-		if (ptr[i] >= 'a' && ptr[i] <= 'z' && (i == 0 || ptr[i - 1] == ' ' || ptr[i - 1] == '\n' || ptr[i - 1] == '\t' || ptr[i - 1] == '.'))
-		ptr[i] = ptr[i] - 32;
+		for (j = 0; j < 13; j++)
+		{
+			if (ptr[i] >= 'a' && ptr[i] <= 'z' && (i == 0 || ptr[i - 1] == (a[j])))
+				ptr[i] = ptr[i] - 32;
+		}
 	}
 	return (ptr);
 }
