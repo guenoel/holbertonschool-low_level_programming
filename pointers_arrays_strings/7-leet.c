@@ -17,10 +17,9 @@ char *leet(char *ptr)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (ptr[i] == a[j])
-				ptr[i] = b[j];
+		if (ptr[i] == a[j] || ptr[i] == a[j] + 32)
+		ptr[i] = b[j];
 		}
-		
 	}
 	return (ptr);
 }
