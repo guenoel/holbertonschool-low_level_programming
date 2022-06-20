@@ -22,7 +22,6 @@ char *_strstr(char *haystack, char *needle)
 			j++;
 			b++;
 		}
-		printf("c = %d\n", c);
 		if (b == c)
 		{
 			if (c > 0)
