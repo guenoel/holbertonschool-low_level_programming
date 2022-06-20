@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strchr - prints buffer in hexa
+ * _strspn - prints buffer in hexa
  * @s: string to search to
  * @accept: character acceptés
  *
