@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * *_strchr - prints buffer in hexa
+ * _strchr - prints buffer in hexa
  * @s: string to search to
- * @c: character to find
+ * @accept: character acceptés
  *
  * Return: something
  */
