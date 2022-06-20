@@ -17,8 +17,10 @@ ptr = '\0';
 for (i = 0; s[i] != '\0'; i++)
 	if (s[i] == c)
 	{
-	ptr = &s[i];
-	break;
+		ptr = &s[i];
+		break;
 	}
+	else
+		ptr = &s[i + 1];
 return (ptr);
 }
