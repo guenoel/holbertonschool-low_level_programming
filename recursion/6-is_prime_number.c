@@ -11,7 +11,7 @@
 
 int prime(int n, int i)
 {
-	if (i == 1)/*i = n-1 donc i=1 correspond a n=2 qui est premier*/ 
+	if (i == 1)/*i = n-1 donc i=1 correspond a n=2 qui est premier*/
 		return (1);
 	if (n % i == 0 && i > 0)/*divisible par autre ? (jusque 0)*/
 		/*si oui pas premier*/
