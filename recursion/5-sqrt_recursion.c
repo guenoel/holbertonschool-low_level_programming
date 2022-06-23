@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _sqrt_prod - production de carrés de int
+ * sqrt_prod - production de carrés de int
  * @a: int a multiplier par lui meme
  * @n: valeur a comparer
  *
