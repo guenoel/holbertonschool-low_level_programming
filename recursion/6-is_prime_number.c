@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * prime
+ * prime - savoir si n-- est diviseur
  * @n: chiffre a tester
  * @i: autre chiffre
  *
@@ -11,11 +11,13 @@
 
 int prime(int n, int i)
 {
-	if (i == 1) /*i = n-1 donc i=1 correspond a n=2 qui est premier*/ 
+	if (i == 1)/*i = n-1 donc i=1 correspond a n=2 qui est premier*/ 
 		return (1);
-	if (n % i == 0 && i > 0)/*divisible par autre ? (jusque 0) si oui pas premier*/
+	if (n % i == 0 && i > 0)/*divisible par autre ? (jusque 0)*/
+		/*si oui pas premier*/
 		return (0);
-	return (prime(n, (i - 1)));/* si les 2 conditions preced non remplies i = 1 return 1*/
+	return (prime(n, (i - 1)));/* si les 2 conditions preced*/
+	/*non remplies i = 1 return 1*/
 }
 
 /**
