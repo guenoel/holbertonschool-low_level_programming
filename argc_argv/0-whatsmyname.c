@@ -5,7 +5,7 @@
  * @argc: nb arguments
  * @argv: array d arguments
  *
- * return: 0 si tout va bien
+ * Return: 0 si tout va bien
  */
 
 
