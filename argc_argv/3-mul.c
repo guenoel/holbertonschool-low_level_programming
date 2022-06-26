@@ -13,7 +13,8 @@
 int main(int argc, char *argv[])
 {
 	int i, j;
-
+	
+	printf("argc = %d\n", argc);
 	if (argc == 3)
 	{
 		i = atoi(argv[1]);
