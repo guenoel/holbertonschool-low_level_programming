@@ -2,8 +2,7 @@
 #include <stdlib.h>
 /**
  * _strdup - fonction
- * @size: taille
- * @c: caractere
+ * @str: taille
  *
  * Return: 0 si tout va bien
  */
@@ -13,14 +12,12 @@ char *_strdup(char *str)
 	unsigned int i, j;
 	char *a;
 
-	for (j = 0; str[j] != '\0';j++)
+	for (j = 0; str[j] != '\0'; j++)
 		;
-	if (j == 0)
-		return (NULL);
-	a = malloc(j * sizeof(char));
+	a = malloc((j + 1) * sizeof(char));
 	if (a == NULL)
 		return (NULL);
-	for (i = 0; i < j; i++)
+	for (i = 0; i < (j + 1); i++)
 		a[i] = str[i];
 	return (a);
 }
