@@ -3,6 +3,7 @@
 /**
  * free_grid - fonction
  * @height: variable
+ * @grid: pointer vers le debut d'une liste de pointers
  *
  * Return: 0 si tout va bien
  */
