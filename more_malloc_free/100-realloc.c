@@ -38,8 +38,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		{
 			free (ptr);
 			free (ptr2);
+			return NULL;
 		}
-			ptr2 = (char*)ptr;
 	}
 		return (ptr2);
 
