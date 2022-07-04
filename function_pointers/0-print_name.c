@@ -13,5 +13,5 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	print_name_uppercase(*name);
+	f(name);
 }
