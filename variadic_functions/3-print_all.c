@@ -14,7 +14,7 @@
 void print_all(const char * const format, ...)
 {
 	unsigned int i, b;
-	char *a, *separator;
+	char *a;
 	va_list argp;
 
 	va_start(argp, format);
