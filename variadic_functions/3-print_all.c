@@ -14,7 +14,7 @@
 void print_all(const char * const format, ...)
 {
 	unsigned int i, b;
-	char *separator;
+	char *a, *separator;
 	va_list argp;
 
 	va_start(argp, format);
@@ -42,7 +42,8 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(argp, double));
 				break;
 			case 's':
-				printf("%s", va_arg(argp, char *));
+				a = va_arg(argp, char *);
+				printf("%s", a != NULL ? "(nil)" : a);
 				break;
 			default:
 				b++;
