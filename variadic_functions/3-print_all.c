@@ -23,13 +23,10 @@ void print_all(const char * const format, ...)
 		printf("\n");
 		return;
 	}
-	separator = ", ";
 	i = 0;
 	b = 0;
 	while (format[i] != '\0')
 	{
-		if (format[i] == '\0')
-			printf("(nil)");
 		switch (format[i])
 		{
 			case 'c':
@@ -50,7 +47,7 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		if (format[i + 1] != '\0' && b != 1)
-			printf("%s", separator);
+			printf(", ");
 		b = 0;
 		i++;
 	}
