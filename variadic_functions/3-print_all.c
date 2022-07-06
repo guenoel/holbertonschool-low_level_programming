@@ -21,6 +21,7 @@ void print_all(const char * const format, ...)
 	va_start(argp, format);
 
 	if (format == NULL)
+		printf("\n");
 		return;
 
 	separator = ", ";
@@ -31,7 +32,7 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case '\0':
-				printf("nil");
+				printf("(nil)");
 				break;
 			case 'c':
 				printf("%c", va_arg(argp, int));
