@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 	b = 0;
 	while (format[i] != '\0')
 	{
-		if (format[i] == NULL)
+		if (format[i] == '\0')
 			printf("(nil)");
 		switch (format[i])
 		{
