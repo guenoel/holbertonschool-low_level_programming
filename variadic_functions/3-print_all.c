@@ -21,9 +21,10 @@ void print_all(const char * const format, ...)
 	va_start(argp, format);
 
 	if (format == NULL)
+	{
 		printf("\n");
 		return;
-
+	}
 	separator = ", ";
 	i = 0;
 	b = 0;
