@@ -20,6 +20,9 @@ void print_all(const char * const format, ...)
 
 	va_start(argp, format);
 
+	if (format == NULL)
+		return;
+
 	separator = ", ";
 	i = 0;
 	b = 0;
@@ -27,6 +30,9 @@ void print_all(const char * const format, ...)
 	{
 		switch (format[i])
 		{
+			case NULL:
+				printf("nil");
+				break;
 			case 'c':
 				printf("%c", va_arg(argp, int));
 				break;
