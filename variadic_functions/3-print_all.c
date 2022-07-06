@@ -13,13 +13,11 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i;
+	unsigned int i, b;
 	char *separator;
 	va_list argp;
-	unsigned int b;
 
 	va_start(argp, format);
-
 	if (format == NULL)
 	{
 		printf("\n");
@@ -30,11 +28,10 @@ void print_all(const char * const format, ...)
 	b = 0;
 	while (format[i] != '\0')
 	{
+		if (format[i] == NULL)
+			printf("(nil)");
 		switch (format[i])
 		{
-			case '\0':
-				printf("(nil)");
-				break;
 			case 'c':
 				printf("%c", va_arg(argp, int));
 				break;
@@ -52,9 +49,7 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		if (format[i + 1] != '\0' && b != 1)
-		{
 			printf("%s", separator);
-		}
 		b = 0;
 		i++;
 	}
