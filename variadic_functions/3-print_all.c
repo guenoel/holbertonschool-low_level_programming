@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 	{
 		switch (format[i])
 		{
-			case NULL:
+			case '\0':
 				printf("nil");
 				break;
 			case 'c':
