@@ -1,0 +1,9 @@
+CC=gcc
+SRC=*.c
+OBJ=$(SRC:.c=.o)
+
+all: $(OBJ)
+	gcc -o school $(OBJ)
+
+$(OBJ) : $(SRC)
+	gcc -c -Wall $(SRC)
