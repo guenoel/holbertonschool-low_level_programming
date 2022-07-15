@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_len - function
+ * list_len - function
  * @h: list
  *
  * Return: Number of bytes printed
