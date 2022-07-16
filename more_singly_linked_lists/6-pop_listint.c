@@ -3,12 +3,14 @@
 /**
  * pop_listint - function
  * @head: liste
+ *
+ * Return: value n of first new head node
  */
 
 int pop_listint(listint_t **head)
 {
 	listint_t *tmp = *head;
-	int i; 
+	int i;
 
 	if (head == NULL)
 		return (-1);
