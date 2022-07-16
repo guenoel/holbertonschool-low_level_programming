@@ -3,7 +3,7 @@
 /**
  * add_nodeint_end - function
  * @head: list
- * @str: string
+ * @n: integer
  *
  * Return: pointer to new node
  */
