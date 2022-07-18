@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * binary_to_uint - function
  * @b: binary number
@@ -18,8 +17,7 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; b[i] != '\0'; i++)
 		;
 	i--;
-	k = i;
-	for (j = 0; i >= 0; k--, j++, i--)
+	for (j = 0; i >= 0; j++, i--)
 	{
 		exp = 1;
 		k = i;
