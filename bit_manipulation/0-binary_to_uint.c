@@ -8,10 +8,9 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i, j, k, bit, base, exp;
+	int i, j, k, bit, exp;
 	unsigned int c = 0;
 
-	base = 2;
 	if (b == NULL)
 		return (0);
 	for (i = 0; b[i] != '\0'; i++)
@@ -23,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 		k = i;
 		while (k != 0)
 		{
-			exp *= base;
+			exp *= 2;
 			--k;
 		}
 		if (b[j] < 48 || b[j] > 49)
