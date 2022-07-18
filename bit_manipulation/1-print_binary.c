@@ -3,7 +3,7 @@
  * print_binary - function
  * @n: decimal number
  *
- * Return: nothing
+ * Return: nothing!
  */
 
 void print_binary(unsigned long int n)
