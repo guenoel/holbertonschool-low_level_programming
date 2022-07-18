@@ -8,17 +8,15 @@
 
 void print_binary(unsigned long int n)
 {
-	int i, m;
+	int i;
 
-	i = 0;
-	m = n;
-	while (m > 1)
-	{
-		m /= 2;
-		i++;
-	}
-
+	if (n == 0)
+		printf("0");
+	for (i = 0; (n >> i) != 0; i++)
+		;
+	i--;
 	for (; i >= 0; i--)
+	{
 		printf("%ld", (n >> i) & 1);
-	printf("\n");
+	}
 }
