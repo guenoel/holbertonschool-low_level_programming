@@ -8,7 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-	int i;
+/*	int i;
 
 	if (n == 0)
 		printf("0");
@@ -18,5 +18,13 @@ void print_binary(unsigned long int n)
 	for (; i >= 0; i--)
 	{
 		_putchar(((n >> i) & 1) + '0');
+	}
+*/
+	if (n == 0 || n == 1)
+		putchar(n + '0');
+	else
+	{
+	print_binary(n >> 1);
+	putchar((n & 1) + '0');
 	}
 }
