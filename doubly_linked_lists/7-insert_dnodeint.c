@@ -34,14 +34,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 				return (*head);
 			*head = (*head)->next;
 		}
-		tmp = (*head)->next;
-		tmp2 = (*head);
-		(*head)->next = node;
-		*head = (*head)->next;
+			tmp2 = *head;
+			tmp = (*head)->next;
+			(*head)->next = node;
+			*head = (*head)->next;
+
 		(*head)->prev = tmp2;
 		(*head)->next = tmp;
 		tmp = (*head);
 		*head = (*head)->next;
+
 		(*head)->prev = tmp;
 		*head = start;
 	}
