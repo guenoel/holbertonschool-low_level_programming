@@ -34,7 +34,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	node->next = NULL;
 	node->prev = NULL;
 
-	if (idx != 0)
+	if (idx != 0 && *head)
 	{
 		if ((*head) != NULL)
 		{
