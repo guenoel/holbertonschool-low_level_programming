@@ -35,28 +35,28 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 		for (i = 0; i < (idx - 1); i++)
 		{
 			if ((*head)->next == NULL)
-				return (*head);
+				return ("(nil)");
 			*head = (*head)->next;
 		}
-		tmp2 = *head;
+		tmp2 = *head; /*head = celui d avant*/
 		tmp = (*head)->next;
 		(*head)->next = node;
 		*head = (*head)->next;
 
-		(*head)->prev = tmp2;
+		(*head)->prev = tmp2; /*head = celui ajouté*/
 		(*head)->next = tmp;
 		tmp = (*head);
-		if (tmp != NULL)
+		if (tmp != NULL) /*si head est pas placé a la fin*/
 		{
 			*head = (*head)->next;
-			(*head)->prev = tmp;
+			(*head)->prev = tmp; /*head = celui d'après*/
 		}
 		*head = start;
 		}
 	}
 	else
 	{
-		*head = add_dnodeint(head, n);
+		*head = add_dnodeint(head, n); /*idx = 0 c'est au debut*/
 	}
 	return (*head);
 }
