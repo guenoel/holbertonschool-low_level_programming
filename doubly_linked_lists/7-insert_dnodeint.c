@@ -40,9 +40,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 		*head = (*head)->next;
 		(*head)->prev = tmp2;
 		(*head)->next = tmp;
-		tmp2 = (*head);
+		tmp = (*head);
 		*head = (*head)->next;
-		(*head)->prev = tmp2;
+		(*head)->prev = tmp;
 		*head = start;
 	}
 	else
