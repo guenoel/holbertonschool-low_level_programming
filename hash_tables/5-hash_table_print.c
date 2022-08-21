@@ -15,7 +15,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht == NULL)
 	{
-		fprintf(stderr, "No hash table\n");
+		fprintf(stderr, "[Anything]\n");
 		exit(EXIT_FAILURE);
 	}
 	printf("{");
