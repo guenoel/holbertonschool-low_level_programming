@@ -14,10 +14,8 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *node;
 
 	if (ht == NULL)
-	{
-		/*fprintf(stderr, "[Anything]\n");*/
 		exit(EXIT_FAILURE);
-	}
+
 	printf("{");
 	for (i = 0, j = 0; i < ht->size; i++)
 	{
