@@ -11,15 +11,27 @@ void hash_table_print(const hash_table_t *ht)
 {
 	long unsigned int i;
 	int j;
+	hash_node_t *node;
 
+	if (ht == NULL)
+	{
+		fprintf(stderr, "No hash table\n");
+		exit(EXIT_FAILURE);
+	}
 	printf("{");
 	for (i = 0, j = 0; i < ht->size; i++)
 	{
-		if (ht->array[i])
+		node = ht->array[i];
+		if (node)
 		{
 			if (j != 0)
 				printf(", ");
-			printf("\'%s\': \'%s\'", (ht->array[i])->key, (ht->array[i])->value);
+			printf("\'%s\': \'%s\'", node->key, node->value);
+			while (node->next)
+			{
+				node = node->next;
+				printf("\'%s\': \'%s\'", node->key, node->value);
+			}
 			j++;
 		}
 	}
