@@ -43,9 +43,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ht->array[index] = create_node(key, value);
 	else
 	{
-		while(node->next != NULL)
+		while(node != NULL)
 		{
-			if (node->key != key)
+			if (strcmp(node->key, key))
 				node = node->next;
 			else
 			{
