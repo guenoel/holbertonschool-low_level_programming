@@ -20,7 +20,7 @@ int recur_search(int *array, int value, size_t low, size_t high)
 	for (i = low; i < high; i++)
 	{
 		printf("%s%d", d, array[i]);
-		d = " ,";
+		d = ", ";
 	}
 	printf("\n");
 	if (low >= high)
