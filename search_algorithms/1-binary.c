@@ -16,6 +16,8 @@ int recur_search(int *array, int value, size_t low, size_t high)
 	char *d = " ";
 
 	pivot = (low + high - 1) / 2;
+	if (low >= high)
+		return (-1);
 	printf("Searching in array:");
 	for (i = low; i < high; i++)
 	{
@@ -23,8 +25,6 @@ int recur_search(int *array, int value, size_t low, size_t high)
 		d = ", ";
 	}
 	printf("\n");
-	if (low >= high)
-		return (-1);
 	if (array[pivot] == value)
 		return (pivot);
 	if (array[pivot] > value)
