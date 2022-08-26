@@ -13,20 +13,22 @@
 int recur_search(int *array, int value, size_t low, size_t high)
 {
 	size_t pivot, i;
+	char *d = " ";
 
-	pivot = low + (high - low) / 2;
-	printf("Searching in array: ");
+	pivot = (low + high - 1) / 2;
+	printf("Searching in array:");
 	for (i = low; i < high; i++)
 	{
-		printf("%d, ", array[i]);
+		printf("%s%d", d, array[i]);
+		d = " ,";
 	}
-	printf("%d\n", array[i]);
+	printf("\n");
 	if (low >= high)
 		return (-1);
 	if (array[pivot] == value)
 		return (pivot);
 	if (array[pivot] > value)
-		return (recur_search(array, value, low, pivot - 1));
+		return (recur_search(array, value, low, pivot));
 	return (recur_search(array, value, pivot + 1, high));
 }
 
@@ -46,7 +48,7 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	index = recur_search(array, value, 0, size - 1);
+	index = recur_search(array, value, 0, size);
 
 	return (index);
 
